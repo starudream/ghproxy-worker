@@ -1,0 +1,8 @@
+# IntelliJ project files
+/.idea
+/*.iml
+
+# Compiled files
+/.wrangler
+/node_modules
+/pnpm-lock.yaml
