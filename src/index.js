@@ -11,7 +11,7 @@ export default {
 
     const matches = config.REGEX.exec(target)
 
-    if (matches.length !== 5) {
+    if (!matches || matches.length !== 5) {
       return new Response("invalid", { status: 400 })
     }
 
@@ -42,6 +42,9 @@ export default {
 
     const res = await fetch(target, { method: req.method, headers: req.headers, body: req.body, redirect: "follow" })
 
-    return new Response(res.body, { status: res.status, headers: res.headers })
+    const headers = new Headers(res.headers)
+    headers.set("Location", "/" + res.url)
+
+    return new Response(res.body, { status: res.status, headers: headers })
   },
 }
