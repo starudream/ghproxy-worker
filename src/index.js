@@ -43,7 +43,7 @@ export default {
     const res = await fetch(target, { method: req.method, headers: req.headers, body: req.body, redirect: "follow" })
 
     const headers = new Headers(res.headers)
-    headers.set("Location", "/" + res.url)
+    headers.set("X-Proxy-Redirect", res.url)
 
     return new Response(res.body, { status: res.status, headers: headers })
   },
