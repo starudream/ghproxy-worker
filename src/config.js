@@ -20,7 +20,7 @@ export default {
         <p class="font-semibold text-gray-700">Please input the GitHub link:</p>
         <input type="text" id="link" class="w-full rounded border p-2 text-sm" placeholder="GitHub Link" autofocus/>
         <button id="submit" class="rounded bg-[#FD5E57] text-gray-50 hover:bg-gradient-to-r hover:from-[#FD5E57] hover:to-[#FC477E]">Download</button>
-        <a href="">
+        <a href="https://github.com/starudream/ghproxy-worker">
             <p class="mt-4 flex items-center text-xs text-gray-500 hover:text-gray-700">
                 See source code on GitHub
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-1 h-3 w-3">
