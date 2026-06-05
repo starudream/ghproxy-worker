@@ -3,7 +3,7 @@ import config from "./config"
 export default {
   async fetch(req) {
     const url = new URL(req.url)
-    const target = url.pathname.slice(1)
+    const target = req.url.slice(url.origin.length + 1)
 
     if (target.length <= "https://github.com/".length) {
       return new Response(config.HTML, { headers: { "Content-Type": "text/html" } })
