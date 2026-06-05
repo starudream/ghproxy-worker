@@ -5,7 +5,7 @@ export default {
     "k3s-io",
     "istio",
   ],
-  REGEX: /^https:\/\/github\.com\/(.+)\/(.+)\/(releases|archive)\/(.*$)/i,
+  REGEX: /^https:\/\/github\.com\/(.+)\/(.+)\/(releases|archive|raw)\/(.*$)/i,
   HTML: `
 <!doctype html>
 <html lang="en">

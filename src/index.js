@@ -5,6 +5,10 @@ function normalizeTarget(target) {
     return target.replace(/^https:\//i, "https://")
   }
 
+  if (/^[^/]+\/[^/]+\/(releases|archive|raw)\//i.test(target)) {
+    return `https://github.com/${target}`
+  }
+
   return target
 }
 
