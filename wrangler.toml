@@ -1,3 +1,10 @@
 name = "ghproxy"
 main = "src/index.js"
-compatibility_date = "2023-11-21"
+compatibility_date = "2026-05-26"
+
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
+enabled = true
