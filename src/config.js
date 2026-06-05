@@ -1,8 +1,11 @@
 export default {
-  OWNERS: [ "starudream", "k3s-io" ],
-
+  OWNERS: [
+    "starudream",
+    "docker",
+    "k3s-io",
+    "istio",
+  ],
   REGEX: /^https:\/\/github\.com\/(.+)\/(.+)\/(releases|archive)\/(.*$)/i,
-
   HTML: `
 <!doctype html>
 <html lang="en">
@@ -43,4 +46,4 @@ export default {
 </body>
 </html>
 `,
-}
+};
