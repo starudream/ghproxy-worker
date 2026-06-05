@@ -1,9 +1,17 @@
 import config from "./config"
 
+function normalizeTarget(target) {
+  if (/^https:\/github\.com\//i.test(target)) {
+    return target.replace(/^https:\//i, "https://")
+  }
+
+  return target
+}
+
 export default {
   async fetch(req) {
     const url = new URL(req.url)
-    const target = req.url.slice(url.origin.length + 1)
+    const target = normalizeTarget(req.url.slice(url.origin.length + 1))
 
     if (target.length <= "https://github.com/".length) {
       return new Response(config.HTML, { headers: { "Content-Type": "text/html" } })
