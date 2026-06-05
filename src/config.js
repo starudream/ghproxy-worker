@@ -1,5 +1,5 @@
 export default {
-  OWNERS: [ "starudream" ],
+  OWNERS: [ "starudream", "k3s-io" ],
 
   REGEX: /^https:\/\/github\.com\/(.+)\/(.+)\/(releases|archive)\/(.*$)/i,
 
