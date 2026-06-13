@@ -18,7 +18,7 @@ export default {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GitHub Proxy</title>
     <link rel="icon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
-    <script src="https://cdn.tailwindcss.com/3.3.5"></script>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 </head>
 <body>
 <div class="flex h-screen items-center justify-center bg-[#fbfbfb]">
