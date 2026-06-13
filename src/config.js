@@ -5,6 +5,9 @@ export default {
     "k3s-io",
     "istio",
   ],
+  REPOS: [
+    "fatedier/frp",
+  ],
   REGEX: /^https:\/\/github\.com\/(.+)\/(.+)\/(releases|archive|raw)\/(.*$)/i,
   HTML: `
 <!doctype html>

@@ -39,10 +39,19 @@ export default {
     }
 
     const owner = matches[1]
+    const repo = matches[2]
+    const fullRepo = `${owner}/${repo}`
 
     let allow = false
     for (const i in config.OWNERS) {
       if (owner === config.OWNERS[i]) {
+        allow = true
+        break
+      }
+    }
+
+    for (const i in config.REPOS) {
+      if (fullRepo === config.REPOS[i]) {
         allow = true
         break
       }
